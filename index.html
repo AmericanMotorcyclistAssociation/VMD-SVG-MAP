@@ -49,11 +49,25 @@
                 border-collapse: collapse;
                 border-spacing: 0;
             }
+
+            /**
+             * CUSTOM STYLES
+             */
+            .map-box {
+                margin: 0 auto; 
+                border-color: black; 
+                border-width: 3px; 
+                border-style: solid; 
+                cursor: pointer; 
+                max-width: 800px; 
+                max-height: 600px;
+                overflow: hidden;
+            }
         </style>
     </head>
     <body>
 
-        <div style="margin: 16px; border-color: black; border-width: 3px; border-style: solid; cursor: pointer;"> 
+        <div class="map-box"> 
             <svg width="1172px" height="1232px" viewBox="0 0 1172 1232">
 
                 <!-- BACKGROUND MAP -->
@@ -85,6 +99,8 @@
                 // 6a. Allow selection of multiple booths
                 // 6b. Have "submit" button to send array of booth selections
             // 7. Support "selected", "hovered", "prime", "standard", "unreservable" states
+            // 8. Max boundaries for scroll; reset position
+            // 9. Default scale based on device width;
 
 
 
